@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "26e26517-8df4-4684-8358-0692609382e7",
+		"name": "BitElite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3950104"
+	},
+	"item": [
+		{
+			"name": "user signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"signed_msg\": \"0xf92beee0b24eeff99f045072d1de45c6dc5e75fd109d2d837ebd5c38f393756869cad413c27f5f0c122c82d966778d3b73fd1e17db6b05216731b8b9d8a9da231c\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/v1/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"signed_msg\": \"0xf92beee0b24eeff99f045072d1de45c6dc5e75fd109d2d837ebd5c38f393756869cad413c27f5f0c122c82d966778d3b73fd1e17db6b05216731b8b9d8a9da231c\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/v1/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"v1",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "270"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10e-ZCqxSluaS4as9+ZvI5K5nsB8d3Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 02 Dec 2022 19:46:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"user\": {\n            \"deleted\": false,\n            \"_id\": \"638a5602f6671cd58a04ae96\",\n            \"walletAddress\": \"0x8119Db83ed2134c6EfdD8716FaEef665f7DAa6e3\",\n            \"created_at\": \"2022-12-02T19:46:10.509Z\",\n            \"createdAt\": \"2022-12-02T19:46:10.529Z\",\n            \"updatedAt\": \"2022-12-02T19:46:10.529Z\",\n            \"__v\": 0\n        }\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}
